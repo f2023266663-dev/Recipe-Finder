@@ -8,11 +8,14 @@ dotenv.config();
 
 const app = express();
 
-// Middleware
+// CORS - Allow all origins for production (Render + Vercel)
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:3001'],
-  credentials: true
+  origin: '*',
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 }));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -22,7 +25,7 @@ app.use((req, res, next) => {
   next();
 });
 
-// MongoDB Connection - FIXED (removed deprecated options)
+// MongoDB Connection
 mongoose.connect(process.env.MONGODB_URI)
   .then(() => console.log('✅ MongoDB Connected'))
   .catch(err => {
