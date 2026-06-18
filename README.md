@@ -24,3 +24,10 @@ A full-stack recipe finder application where users can search for recipes, save 
 ```bash
 npm install
 npm start
+
+### Backend
+``` bash
+
+cd backend
+npm install
+npm run dev
