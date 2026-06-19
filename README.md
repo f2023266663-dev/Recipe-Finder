@@ -44,27 +44,30 @@ A full-stack recipe finder application where users can search for recipes, save 
 ---
 
 ## 📁 Project Structure
+
+```
 Recipe-Finder/
 ├── backend/
-│ ├── models/
-│ │ └── User.js
-│ ├── routes/
-│ │ ├── auth.js
-│ │ └── public.js
-│ ├── .env
-│ ├── package.json
-│ └── server.js
+│   ├── models/
+│   │   └── User.js
+│   ├── routes/
+│   │   ├── auth.js
+│   │   └── public.js
+│   ├── .env
+│   ├── package.json
+│   └── server.js
 ├── src/
-│ ├── components/
-│ ├── context/
-│ ├── hooks/
-│ ├── utils/
-│ ├── App.js
-│ └── index.js
+│   ├── components/
+│   ├── context/
+│   ├── hooks/
+│   ├── utils/
+│   ├── App.js
+│   └── index.js
 ├── public/
-│ └── index.html
+│   └── index.html
 ├── package.json
 └── README.md
+```
 
 ---
 ## 🚀 Live Demo
