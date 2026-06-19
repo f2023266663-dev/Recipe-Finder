@@ -25,9 +25,18 @@ A full-stack recipe finder application where users can search for recipes, save 
 npm install
 npm start
 
-### Backend
+## Backend
 ``` bash
 
 cd backend
 npm install
 npm run dev
+
+## 🚀 Live Demo
+
+- **Frontend:** https://recipe-finder-indol-seven.vercel.app
+- **Backend API:** https://recipe-finder-production-17b6.up.railway.app/api/test
+
+---
+
+
