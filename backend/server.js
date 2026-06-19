@@ -60,6 +60,11 @@ app.get('/api/test', (req, res) => {
   });
 });
 
+// Add this test route
+app.get('/api/auth/test', (req, res) => {
+  res.json({ message: 'Auth routes are working!' });
+});
+
 // 404 handler
 app.use((req, res) => {
   res.status(404).json({
